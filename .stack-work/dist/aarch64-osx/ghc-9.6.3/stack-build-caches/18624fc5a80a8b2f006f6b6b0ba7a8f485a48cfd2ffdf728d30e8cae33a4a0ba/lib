@@ -1,0 +1,20 @@
+/Users/boris.zhguchev/.ghcup/ghc/9.6.3/lib/ghc-9.6.3/lib/aarch64-osx-ghc-9.6.3/rts-1.0.2/include/ghcversion.h:
+  hash: 9ac4cd6dcf20b31fc6e9eefbda1d924d33786bc197a79b0e6947ed7129581019
+/Users/boris.zhguchev/PetProjects/hlab/.stack-work/dist/aarch64-osx/ghc-9.6.3/build/autogen/Paths_hlab.hs:
+  hash: 28c658f9670b0696c8106fdd2dd1a64bb09c6295c753b278b63abf424ddc66ed
+/Users/boris.zhguchev/PetProjects/hlab/.stack-work/dist/aarch64-osx/ghc-9.6.3/build/autogen/cabal_macros.h:
+  hash: af5a17639a41e52930290c25a08ed6dd3e6f0ff3bca026811e31971f952df2fb
+/Users/boris.zhguchev/PetProjects/hlab/CHANGELOG.md:
+  hash: 2b01644b3037bbbe645a47f802442a1103f6702c285195cd7d7550d2a61fa617
+/Users/boris.zhguchev/PetProjects/hlab/README.md:
+  hash: dbf611ce08887a147a3c7f771bb47127331281618f9256d407d7b8ab4ca5fae1
+/Users/boris.zhguchev/PetProjects/hlab/hlab.cabal:
+  hash: 782df6fe4b94cde4621edc19e13b23884d20141865890ea2522438aa56432517
+/Users/boris.zhguchev/PetProjects/hlab/package.yaml:
+  hash: c2f0fd49565c218da4a05cefb30e055e8aace1ff03fb90d7a149af4023c40fb9
+/Users/boris.zhguchev/PetProjects/hlab/src/Fd.hs:
+  hash: 91d2de01220c2bb42f0b8bfc40623c8d10ada898fa68f06e1c75318dd675b66c
+/Users/boris.zhguchev/PetProjects/hlab/src/Lib.hs:
+  hash: 11d6d255cb397fa45980eb516ea685146565d9de2108c4eea356ea41db8364be
+/Users/boris.zhguchev/PetProjects/hlab/src/St.hs:
+  hash: 189661c84675ed4ad6001b2fae452694c0e23cb6bd2bb2f3f1483910da07ad32
