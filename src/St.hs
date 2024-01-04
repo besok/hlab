@@ -1,30 +1,30 @@
 module St () where
 
+import Control.Monad (foldM, forM)
 import Control.Monad.State
-import Control.Monad (foldM)
+
+type LogRecord = String
 
 data Steps a = Empty | Last a | Inter a (Steps a) deriving (Show)
 
 add :: a -> Steps a -> Steps a
-add step Empty = Last step
-add step (Last a) = Inter a (Last step)
-add step (Inter a b) = Inter a $ add step b
+add x Empty = Last x
+add x (Last y) = Inter y (Last x)
+add x (Inter y steps) = Inter y (add x steps)
 
-start :: State (Steps a) String
-start = do
-  put $ Empty
-  return $ "|"
+data LogSteps a = LogSteps (Steps a) LogRecord deriving (Show)
 
-addWithLog :: (Show a) => a -> State (Steps a) String
-addWithLog step = do
-  modify $ add step
-  return $ show step
+empty :: LogSteps a
+empty = LogSteps Empty ""
 
-process :: (Show a) => State (Steps a) String -> a -> State (Steps a) String
-process state step  = do
-  rhs <- addWithLog step
-  lhs <- state
-  return $ lhs ++ rhs
+getLog :: LogSteps a -> LogRecord
+getLog (LogSteps _ log) = log
 
-run :: (Show a) => [a] ->   String
-run elems = evalState (foldl process start elems) Empty
+append :: (Show a) => a -> LogSteps a -> LogSteps a
+append x (LogSteps steps log) = LogSteps (add x steps) $ log ++ show x
+
+logStep :: (Show a) => a -> State (LogSteps a) ()
+logStep x = modify $ append x
+
+logSteps :: (Show a) => [a] -> State (LogSteps a) LogRecord
+logSteps elems = forM elems logStep >> gets getLog
