@@ -47,7 +47,7 @@ getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: 
 
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 bindir     = "/Users/boris.zhguchev/PetProjects/hlab/.stack-work/install/aarch64-osx/18624fc5a80a8b2f006f6b6b0ba7a8f485a48cfd2ffdf728d30e8cae33a4a0ba/9.6.3/bin"
-libdir     = "/Users/boris.zhguchev/PetProjects/hlab/.stack-work/install/aarch64-osx/18624fc5a80a8b2f006f6b6b0ba7a8f485a48cfd2ffdf728d30e8cae33a4a0ba/9.6.3/lib/aarch64-osx-ghc-9.6.3/hlab-0.1.0.0-CCbMh4elJVvBL6tfA67sm9"
+libdir     = "/Users/boris.zhguchev/PetProjects/hlab/.stack-work/install/aarch64-osx/18624fc5a80a8b2f006f6b6b0ba7a8f485a48cfd2ffdf728d30e8cae33a4a0ba/9.6.3/lib/aarch64-osx-ghc-9.6.3/hlab-0.1.0.0-Ibwu6pBVMqr5pWGwGfCbgC"
 dynlibdir  = "/Users/boris.zhguchev/PetProjects/hlab/.stack-work/install/aarch64-osx/18624fc5a80a8b2f006f6b6b0ba7a8f485a48cfd2ffdf728d30e8cae33a4a0ba/9.6.3/lib/aarch64-osx-ghc-9.6.3"
 datadir    = "/Users/boris.zhguchev/PetProjects/hlab/.stack-work/install/aarch64-osx/18624fc5a80a8b2f006f6b6b0ba7a8f485a48cfd2ffdf728d30e8cae33a4a0ba/9.6.3/share/aarch64-osx-ghc-9.6.3/hlab-0.1.0.0"
 libexecdir = "/Users/boris.zhguchev/PetProjects/hlab/.stack-work/install/aarch64-osx/18624fc5a80a8b2f006f6b6b0ba7a8f485a48cfd2ffdf728d30e8cae33a4a0ba/9.6.3/libexec/aarch64-osx-ghc-9.6.3/hlab-0.1.0.0"

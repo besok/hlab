@@ -40,6 +40,16 @@
   (major1) == 2 && (major2) <  3 || \
   (major1) == 2 && (major2) == 3 && (minor) <= 1)
 #endif /* MIN_VERSION_mtl */
+/* package text-2.0.2 */
+#ifndef VERSION_text
+#define VERSION_text "2.0.2"
+#endif /* VERSION_text */
+#ifndef MIN_VERSION_text
+#define MIN_VERSION_text(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  0 || \
+  (major1) == 2 && (major2) == 0 && (minor) <= 2)
+#endif /* MIN_VERSION_text */
 
 /* tool gcc-15.0.0 */
 #ifndef TOOL_VERSION_gcc
@@ -113,10 +123,10 @@
 #endif /* MIN_TOOL_VERSION_runghc */
 
 #ifndef CURRENT_PACKAGE_KEY
-#define CURRENT_PACKAGE_KEY "hlab-0.1.0.0-CCbMh4elJVvBL6tfA67sm9"
+#define CURRENT_PACKAGE_KEY "hlab-0.1.0.0-Ibwu6pBVMqr5pWGwGfCbgC"
 #endif /* CURRENT_packageKey */
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "hlab-0.1.0.0-CCbMh4elJVvBL6tfA67sm9"
+#define CURRENT_COMPONENT_ID "hlab-0.1.0.0-Ibwu6pBVMqr5pWGwGfCbgC"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "0.1.0.0"

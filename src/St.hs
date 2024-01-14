@@ -18,13 +18,14 @@ empty :: LogSteps a
 empty = LogSteps Empty ""
 
 getLog :: LogSteps a -> LogRecord
-getLog (LogSteps _ log) = log
+getLog (LogSteps _ l) = l
 
 append :: (Show a) => a -> LogSteps a -> LogSteps a
-append x (LogSteps steps log) = LogSteps (add x steps) $ log ++ show x
+append x (LogSteps steps l) = LogSteps (add x steps) $ l ++ show x
 
 logStep :: (Show a) => a -> State (LogSteps a) ()
 logStep x = modify $ append x
 
 logSteps :: (Show a) => [a] -> State (LogSteps a) LogRecord
 logSteps elems = forM elems logStep >> gets getLog
+

@@ -23,6 +23,7 @@ dependencies:
 - base >= 4.7 && < 5
 - directory > 1.2
 - mtl >= 2.2.1
+- text >= 2.0.2
 
 ghc-options:
 - -Wall

@@ -1,0 +1,7 @@
+one                                     = 1
+oneone                                  = no another one
+                                       
+no statement should remain the same    
+                                       
+suuuuper long variable name with spaces = 1
+                                        = empty
